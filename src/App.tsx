@@ -13,6 +13,7 @@ import { ActivityFormModal } from './components/modals/ActivityFormModal';
 import { ActivityDetailModal } from './components/modals/ActivityDetailModal';
 import { DeleteConfirmModal } from './components/modals/DeleteConfirmModal';
 import { SupabaseConfigModal } from './components/modals/SupabaseConfigModal';
+import { Analytics } from '@vercel/analytics/react';
 import type { WasteActivity } from './types';
 
 const MainAppContent: React.FC = () => {
@@ -146,6 +147,7 @@ export default function App() {
     <ThemeProvider>
       <WasteProvider>
         <MainAppContent />
+        <Analytics />
       </WasteProvider>
     </ThemeProvider>
   );
