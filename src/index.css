@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply selection:bg-eco-200 selection:text-eco-900;
+  }
+}
+
+/* Eco Mode / Low Carbon UI modifier */
+.eco-mode {
+  --eco-filter: grayscale(10%) contrast(95%);
+}
+
+.eco-mode * {
+  animation: none !important;
+  transition-duration: 0.05s !important;
+  box-shadow: none !important;
+}
+
+/* Custom scrollbars that are lightweight */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
