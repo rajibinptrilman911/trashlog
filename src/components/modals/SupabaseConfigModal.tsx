@@ -145,7 +145,7 @@ export const SupabaseConfigModal: React.FC<SupabaseConfigModalProps> = ({
           {activeSubTab === 'config' ? (
             <form onSubmit={handleTestAndSave} className="space-y-4">
               <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                Aplikasi EcoTrack dirancang dengan arsitektur <strong>Offline-First & Green Computing</strong>. Secara bawaan, data tersimpan persisten di LocalStorage tanpa membebani server. Anda dapat menghubungkan proyek Supabase untuk penyimpanan multi-perangkat.
+                Aplikasi TrashLog dirancang dengan arsitektur <strong>Offline-First & Green Computing</strong>. Secara bawaan, data tersimpan persisten di LocalStorage tanpa membebani server. Anda dapat menghubungkan proyek Supabase untuk penyimpanan multi-perangkat.
               </div>
 
               <div>

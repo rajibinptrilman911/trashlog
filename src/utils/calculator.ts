@@ -109,7 +109,7 @@ export function exportActivitiesToCSV(activities: WasteActivity[]): void {
   const encodedUri = encodeURI(csvContent);
   const link = document.createElement('a');
   link.setAttribute('href', encodedUri);
-  link.setAttribute('download', `ecotrack_laporan_keberlanjutan_${new Date().toISOString().split('T')[0]}.csv`);
+  link.setAttribute('download', `trashlog_laporan_keberlanjutan_${new Date().toISOString().split('T')[0]}.csv`);
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -122,7 +122,7 @@ export function exportActivitiesToJSON(activities: WasteActivity[]): void {
   const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(activities, null, 2));
   const link = document.createElement('a');
   link.setAttribute('href', dataStr);
-  link.setAttribute('download', `ecotrack_data_backup_${new Date().toISOString().split('T')[0]}.json`);
+  link.setAttribute('download', `trashlog_data_backup_${new Date().toISOString().split('T')[0]}.json`);
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
