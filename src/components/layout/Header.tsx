@@ -58,6 +58,10 @@ export const Header: React.FC<HeaderProps> = ({
           <Menu className="w-5 h-5" />
         </button>
 
+        <div className="lg:hidden flex items-center shrink-0">
+          <img src="/logo-icon.png" alt="TrashLog" className="w-7 h-7 object-contain" />
+        </div>
+
         <div>
           <h2 className="text-lg md:text-xl font-bold tracking-tight text-slate-900 dark:text-white">
             {currentTab.title}

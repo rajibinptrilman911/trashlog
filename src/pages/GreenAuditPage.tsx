@@ -184,7 +184,7 @@ export const GreenAuditPage: React.FC = () => {
               <span>Sustainable Web Design (SWD) Model v4</span>
             </div>
             <h3 className="text-xl font-bold text-white">
-              Estimasi Emisi Digital Aplikasi EcoTrack
+              Estimasi Emisi Digital Aplikasi TrashLog
             </h3>
           </div>
           <div className="px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 text-xs font-bold">

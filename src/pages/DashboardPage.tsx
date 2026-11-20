@@ -51,7 +51,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             Pantau Sirkularitas Sampah & Reduksi Karbon
           </h2>
           <p className="text-xs sm:text-sm text-emerald-100/90 leading-relaxed mb-4">
-            EcoTrack menghitung estimasi dampak lingkungan dari setiap kilogram sampah yang dialihkan dari Tempat Pemrosesan Akhir (TPA) menggunakan faktor emisi terverifikasi (IPCC & US EPA WARM).
+            TrashLog menghitung estimasi dampak lingkungan dari setiap kilogram sampah yang dialihkan dari Tempat Pemrosesan Akhir (TPA) menggunakan faktor emisi terverifikasi (IPCC & US EPA WARM).
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <button

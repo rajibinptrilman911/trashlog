@@ -6,10 +6,10 @@ import {
   ShieldCheck, 
   PlusCircle, 
   X, 
-  Leaf, 
   Database 
 } from 'lucide-react';
 import { useWaste } from '../../context/WasteContext';
+import { Logo } from '../common/Logo';
 
 interface MobileNavProps {
   activeTab: string;
@@ -49,15 +49,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({
           <div className="fixed inset-y-0 left-0 w-4/5 max-w-xs bg-white dark:bg-slate-900 shadow-xl p-5 flex flex-col justify-between z-10">
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800 mb-4">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-emerald-600 flex items-center justify-center text-white">
-                    <Leaf className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="font-bold text-slate-900 dark:text-white text-base">EcoTrack</span>
-                    <span className="block text-[10px] text-slate-400">SI Berkelanjutan</span>
-                  </div>
-                </div>
+                <Logo variant="horizontal" size="sm" showSubtitle={true} />
                 <button
                   onClick={onCloseDrawer}
                   className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200"

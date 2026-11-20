@@ -3,13 +3,13 @@ import {
   LayoutDashboard, 
   Trash2, 
   Calculator, 
-  Leaf, 
   ShieldCheck, 
   PlusCircle, 
   Database,
   ExternalLink 
 } from 'lucide-react';
 import { useWaste } from '../../context/WasteContext';
+import { Logo } from '../common/Logo';
 
 interface SidebarProps {
   activeTab: string;
@@ -57,21 +57,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <aside className="hidden lg:flex flex-col w-72 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 h-screen sticky top-0 p-5 select-none justify-between">
       <div>
         {/* Brand Header */}
-        <div className="flex items-center gap-3 px-2 py-2 mb-6">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-500 flex items-center justify-center text-white shadow-md shadow-emerald-500/20">
-            <Leaf className="w-5 h-5" />
-          </div>
-          <div>
-            <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
-              EcoTrack
-              <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
-                v2.0
-              </span>
-            </h1>
-            <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
-              Sistem Informasi Berkelanjutan
-            </p>
-          </div>
+        <div className="px-2 py-2 mb-6">
+          <Logo variant="horizontal" size="md" showSubtitle={true} />
         </div>
 
         {/* Quick Action Button */}

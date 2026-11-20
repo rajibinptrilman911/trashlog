@@ -338,7 +338,7 @@ export const CalculatorPage: React.FC = () => {
             Tabel Faktor Emisi & Sumber Referensi Akademis
           </h3>
           <p className="text-xs text-slate-500 dark:text-slate-400">
-            Faktor konversi yang digunakan dalam sistem EcoTrack beserta rujukan literatur ilmiah resminya
+            Faktor konversi yang digunakan dalam sistem TrashLog beserta rujukan literatur ilmiah resminya
           </p>
         </div>
 
