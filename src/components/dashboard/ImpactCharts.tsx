@@ -103,16 +103,16 @@ export const ImpactCharts: React.FC<ImpactChartsProps> = ({ activities }) => {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       {/* Chart 1: Timeline Tren Sampah & Emisi */}
       <div className="lg:col-span-2 p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 min-w-0">
+          <div className="min-w-0">
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white truncate">
               Tren Pengelolaan Sampah & Reduksi CO2e
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400">
               Perbandingan akumulasi berat material (kg) terhadap estimasi emisi karbon yang dihindari (kg CO2e)
             </p>
           </div>
-          <div className="flex items-center gap-3 text-xs">
+          <div className="flex flex-wrap items-center gap-3 text-xs shrink-0">
             <span className="flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
               Sampah (kg)

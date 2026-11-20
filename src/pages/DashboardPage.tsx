@@ -72,7 +72,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       </div>
 
       {/* 5 Key Metric Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
         <StatCard
           title="Sampah Terkelola"
           value={summary.totalWeightKg}
@@ -154,11 +154,11 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </p>
           </div>
 
-          <div className="pt-4 border-t border-slate-700/80 flex items-center justify-between text-xs">
+          <div className="pt-4 border-t border-slate-700/80 flex flex-wrap items-center justify-between gap-2 text-xs">
             <span className="text-slate-400">Model Pengujian: EPA WARM v15</span>
             <button
               onClick={() => onNavigateToTab('calculator')}
-              className="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1"
+              className="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1 shrink-0"
             >
               <span>Buka Kalkulator</span>
               <ArrowUpRight className="w-3.5 h-3.5" />

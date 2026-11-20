@@ -50,33 +50,35 @@ export const StatCard: React.FC<StatCardProps> = ({
   const style = schemeStyles[colorScheme];
 
   return (
-    <div className={`p-5 rounded-2xl bg-white dark:bg-slate-900 border ${style.border} shadow-sm transition-all duration-200 hover:shadow-md`}>
-      <div className="flex items-center justify-between mb-3">
-        <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-          {title}
-        </span>
-        <div className={`p-2.5 rounded-xl ${style.bgIcon}`}>
-          {icon}
+    <div className={`p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-900 border ${style.border} shadow-sm transition-all duration-200 hover:shadow-md flex flex-col justify-between min-w-0 overflow-hidden`}>
+      <div>
+        <div className="flex items-start justify-between gap-2 mb-2 min-w-0">
+          <span className="text-[11px] sm:text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider leading-tight min-w-0 break-words">
+            {title}
+          </span>
+          <div className={`p-2 sm:p-2.5 rounded-xl shrink-0 ${style.bgIcon}`}>
+            {icon}
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5 mb-2 min-w-0">
+          <span className="text-xl sm:text-2xl xl:text-3xl font-bold tracking-tight text-slate-900 dark:text-white truncate max-w-full">
+            {value}
+          </span>
+          {unit && (
+            <span className="text-xs sm:text-sm font-semibold text-slate-500 dark:text-slate-400 shrink-0">
+              {unit}
+            </span>
+          )}
         </div>
       </div>
 
-      <div className="flex items-baseline gap-1.5 mb-1.5">
-        <span className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
-          {value}
-        </span>
-        {unit && (
-          <span className="text-sm font-semibold text-slate-500 dark:text-slate-400">
-            {unit}
-          </span>
-        )}
-      </div>
-
-      <div className="flex items-center justify-between pt-1">
-        <p className="text-xs text-slate-500 dark:text-slate-400">
+      <div className="flex flex-wrap items-center justify-between gap-1.5 pt-2 border-t border-slate-100 dark:border-slate-800/80 min-w-0">
+        <p className="text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 leading-tight min-w-0 break-words">
           {subtitle}
         </p>
         {badge && (
-          <span className={`text-[11px] font-medium px-2 py-0.5 rounded-full ${style.badge}`}>
+          <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full shrink-0 whitespace-nowrap ${style.badge}`}>
             {badge}
           </span>
         )}
