@@ -109,12 +109,9 @@ export const Logo: React.FC<LogoProps> = ({
         {renderIcon()}
       </div>
       <div className="min-w-0">
-        <h1 className={`${textSizes[size]} font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5 leading-none`}>
+        <h1 className={`${textSizes[size]} font-bold tracking-tight text-slate-900 dark:text-white flex items-center leading-none`}>
           <span>Trash</span>
           <span className="text-emerald-500 dark:text-emerald-400">Log</span>
-          <span className="text-[10px] uppercase font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
-            v2.0
-          </span>
         </h1>
         {showSubtitle && (
           <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mt-1 truncate">
