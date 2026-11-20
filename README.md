@@ -1,4 +1,4 @@
-# 🌿 EcoTrack - Sistem Informasi Berkelanjutan & Pemantauan Ekonomi Sirkular
+# 🌿 TrashLog - Sistem Informasi Berkelanjutan & Pemantauan Ekonomi Sirkular
 
 > **Proyek Akhir Mata Kuliah Sistem Informasi Berkelanjutan**  
 > Aplikasi web interaktif untuk pemantauan pengelolaan sampah, sirkularitas material, dan kalkulasi jejak karbon ($\text{CO}_2\text{e}$) berbasis faktor emisi *Life Cycle Assessment* (LCA) standar ilmiah internasional.
