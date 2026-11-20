@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 import { useWaste } from '../../context/WasteContext';
+import { Logo } from '../common/Logo';
 
 interface HeaderProps {
   activeTab: string;
@@ -59,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
 
         <div className="lg:hidden flex items-center shrink-0">
-          <img src="/logo-icon.png" alt="TrashLog" className="w-7 h-7 object-contain" />
+          <Logo variant="icon-only" size="sm" />
         </div>
 
         <div>
